@@ -27,6 +27,7 @@ button{
     position: fixed;
     width:100%;
     background-color: white;
+    box-shadow: rgb(0 0 0 / 9%) 0px 2px 24px 0px;
 }
 .hamburger{
     display: flex;
