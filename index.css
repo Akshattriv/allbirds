@@ -16,6 +16,9 @@ img{
 hr{
     opacity: 0.6;
 }
+button{
+    transition: 200ms ease;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -103,6 +106,12 @@ hr{
     margin-right: 2em;
     font-weight: bold;
     letter-spacing: 2px;
+}
+.first-section__overlay > .first-section__buttons >button:hover{
+    background-color: rgb(36 46 51);
+    color: white;
+    border: none;
+    transition: 200ms ease;
 }
 .card > h1{
     width: 100%;
@@ -212,6 +221,9 @@ hr{
     }
     .hamburger{
         display: flex;
+    }
+    .card__duplicate{
+        margin-top: 18%;
     }
     .card__duplicate > div > .card__duplicate-inner{
         width: 100%;
