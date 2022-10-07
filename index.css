@@ -242,7 +242,8 @@ button{
 }
 .boxOne > img{
     height: 80vh;
-    object-fit: contain;
+    /* to add different pics */
+    object-fit: cover;
     width: 100%;
 }
 .boxOne > .boxOne__content{
