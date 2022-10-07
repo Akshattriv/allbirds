@@ -21,6 +21,9 @@ hr{
     justify-content: space-between;
     align-items: center;
     padding: .5em 1.5em;
+    position: fixed;
+    width:100%;
+    background-color: white;
 }
 .hamburger{
     display: flex;
@@ -151,8 +154,21 @@ hr{
 .card__content-item{
     box-shadow: 1px 7px 4px 7px rgba(203, 202, 202, 0.2);
 }
+.card__duplicate > h1{
+    justify-content:flex-start;
+    padding-left:11%;
+}
+.card__duplicate > .card__duplicate__content{
+    width:82%; 
+    justify-content: space-between; 
+    gap: 1.3em; 
+    display: flex;
+}
+.card__duplicate > div > .card__duplicate-inner{
+    width: 33%;
+}
 /* .card__content-item > img:hover      TODO*/
-@media screen and (max-width: 440px){
+@media screen and (max-width: 768px){
     .navbar__left, .navbar__last > .navbar__sub-item, .navbar__last > .navbar__icons > .icons__images {
         display: none;
     }
@@ -196,6 +212,13 @@ hr{
     }
     .hamburger{
         display: flex;
+    }
+    .card__duplicate > div > .card__duplicate-inner{
+        width: 100%;
+    }
+    .card__duplicate > h1{
+        font-size: 25px;
+        margin-top: 2%;
     }
 }
 .boxOne{
