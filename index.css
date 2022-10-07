@@ -204,6 +204,9 @@ button{
         font-size:14px;
         gap: 2em;
     }
+    .card{
+        margin-top: 3em;
+    }
     .card > .card__text > p:last-child{
         display: none;
     }
@@ -239,7 +242,7 @@ button{
 }
 .boxOne > img{
     height: 80vh;
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
 }
 .boxOne > .boxOne__content{
