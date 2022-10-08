@@ -8,7 +8,6 @@
 }
 body{
     font-family: Poppins;
-    /* overflow-x: hidden;   */
 }
 img{    
     width: 100%;
@@ -55,14 +54,15 @@ button{
 .navbar > .navbar__item > ul,.navbar__sub-item > ul{
     display: flex;
 }
-.navbar > .navbar__item > ul > li,.navbar__sub-item > ul > li{
+.fixed > .navbar > .navbar__item > ul > li,.navbar__sub-item > ul > li{
     list-style: none;
     padding: 0 1.5em;
+}
+.fixed > .navbar > .navbar__left > ul > li:hover, .navbar > .navbar__last > .navbar__sub-item > ul > li:hover{
+    text-decoration: underline;
     cursor: pointer;
 }
-.navbar > .navbar__item > ul > li:hover,.navbar__sub-item > ul > li:hover{
-    text-decoration: underline;
-}
+/* This hover effect is not working because of position: fixed */
 .navbar__sub-item > ul{
     margin-right: 0;
 }
@@ -177,7 +177,6 @@ button{
 .card__duplicate > div > .card__duplicate-inner{
     width: 33%;
 }
-/* .card__content-item > img:hover      TODO*/
 @media screen and (max-width: 768px){
     .navbar__left, .navbar__last > .navbar__sub-item, .navbar__last > .navbar__icons > .icons__images {
         display: none;
@@ -193,10 +192,6 @@ button{
     }
     .first-section > div > p{
         font-size: 14px;
-    }
-    .first-section > div > div{
-        display: flex;  
-        
     }
     .first-section > div > .first-section__buttons > button{
         padding: 13px 15px;
