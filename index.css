@@ -55,11 +55,11 @@ button{
 .navbar > .navbar__item > ul,.navbar__sub-item > ul{
     display: flex;
 }
-.fixed > .navbar > .navbar__item > ul > li,.navbar__sub-item > ul > li{
+.navbar > .navbar__item > ul > li,.navbar__sub-item > ul > li{
     list-style: none;
     padding: 0 1.5em;
 }
-.fixed > .navbar > .navbar__left > ul > li:hover, .navbar > .navbar__last > .navbar__sub-item > ul > li:hover
+.navbar > .navbar__left > ul > li:hover, .navbar > .navbar__last > .navbar__sub-item > ul > li:hover
 {
     text-decoration: underline;
     cursor: pointer;
